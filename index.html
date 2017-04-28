@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, maximum-scale=0">
+    <link rel="shortcut icon" href="assets/img/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/img/icons/favicon.ico" type="image/x-icon">
+    <title>Жильё Моё</title>
+    <script type="text/javascript">
+      function get_ms() {
+         return new Date().getMilliseconds();
+      }
+      var timerStart = get_ms();
+    </script>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-92306211-1', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+  </head>
+  <body>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter42935899 = new Ya.Metrika({
+                        id:42935899,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        webvisor:true
+                    });
+                } catch(e) { }
+            });
+    
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+    
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/42935899" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+        <!-- Close button -->
+        <button class="close-button" aria-label="Close menu" type="button" data-close> <span aria-hidden="true">&times;</span> </button>
+        <!-- Menu -->
+        <ul class="vertical menu">
+          <li><a href="#">Foundation</a></li>
+          <li><a href="#">Dot</a></li>
+          <li><a href="#">ZURB</a></li>
+          <li><a href="#">Com</a></li>
+          <li><a href="#">Slash</a></li>
+          <li><a href="#">Sites</a></li>
+        </ul>
+      </div>
+      <div class="off-canvas-content" data-off-canvas-content>
+        <header class="head-nav">
+          <div class="row wrap align-middle">
+            <div class="logo small-24 large-6 column">
+              <a href=""><img src="assets/img/logo.png" alt="Жильё моё"></a>
+            </div>
+            <div class="descript small-24 large-4 column">
+              <p>Малоэтажное строительство<br> в Красноярске</p>
+            </div>
+            <div class="address small-24 large-7 column">
+              <p>ул. Северное шоссе, 17, 6 офис (4 этаж)</p>
+            </div>
+            <div class="wanna-credit small-24 large-3 column">
+              <div class="button" data-open="credit-modal">Хотите в кредит?</div>
+            </div>
+            <div class="phone column">
+              <a href="tel:88005500806">8-800-550-08-66</a>
+              <p data-open="consult-modal">Нужна консультация?</p>
+            </div>
+          </div>
+        <!--
+          <nav class="top-menu">
+            <div class="row">
+              <ul class="menu-list">
+                <li class="active">
+                  <a href="#">Главная</a>
+                </li>
+                <li>
+                  <a href="#">Каркасные дома</a>
+                </li>
+                <li>
+                  <a href="#">Дома из сип-панелей</a>
+                </li>
+                <li>
+                  <a href="#">Дома из бруса</a>
+                </li>
+                <li>
+                  <a href="#">Дома из блоков</a>
+                </li>
+                <li>
+                  <a href="#">Купольные дома</a>
+                </li>
+                <li>
+                  <a href="#">Проекты и цены</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        -->
+        </header>
+        <section class="main-offer">
+          <div class="row">
+            <div class="offer-wrap">
+              <div class="offer">
+                <h1>
+                  <span class="small"><b>Строительство и продажа</b> </span>
+                  <span class="big">загородных домов</span>
+                  <span class="small">в европейском стиле по современным технологиям</span>
+                </h1>
+              </div>
+            </div>
+            <div class="types-block">
+              <ul class="types small-up-1 large-up-3">
+                <li class="item column">
+                  <div class="text">
+                    <p class="cap">Базовый дом</p>
+                    <p class="sub">(каркас)</p>
+                    <p class="descr">Подходит для тех, кто предпочитает выполнить отделку самостоятельно</p>
+                    <a data-open="price-modal-1">Узнать стоимость</a>
+                  </div>
+                </li>
+                <li class="item column">
+                  <div class="text">
+                    <p class="cap">Дом под ключ</p>
+                    <p class="sub">(каркас + отделка + коммуникация)</p>
+                    <p class="descr">Подходит для тех, кто хочет въехать в готовый дом и заниматься только украшением интерьера</p>
+                    <a data-open="price-modal-2">Узнать стоимость</a>
+                  </div>
+                </li>
+                <li class="item column">
+                  <div class="text">
+                    <p class="cap">Готовый дом с участком</p>
+                    <p class="sub">(дом под ключ + участок)</p>
+                    <p class="descr">Подходит для тех, кто хочет отдать нам все заботы по поиску участка и строительству дома</p>
+                    <a data-open="price-modal-3">Узнать стоимость</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        
+        <section class="main-second-block">
+          <div class="row">
+            <p class="header-text">
+              Хотите до начала строительства <span class="subtitle">увидеть как в реальности будет выглядеть ваш дом?</span>
+            </p>
+            <ul class="models">
+              <li><img src="assets/img/3d-model-1.png" alt=""></li>
+              <li><img src="assets/img/3d-model-2.png" alt=""></li>
+              <li><img src="assets/img/3d-model-3.png" alt=""></li>
+            </ul>
+            <p class="small-header">Получите <span>БЕСПЛАТНО</span> <span class="subtitle">разработку реалистичной 3D-модели вашего дома</span></p>
+            <div class="button" data-open="get3d-modal">Получить 3D-модель</div>
+          </div>
+        </section>
+        
+        <section class="main-bullets">
+          <div class="row">
+            <div class="header-text">
+              Ваш дом будет построен <span class="subtitle">в соответствии со всеми строительными нормами</span>
+              <div class="bullets-area">
+                <div class="bullet large-10 column">
+                  <div class="wrap">
+                    <div class="bul-text">
+                      <div class="text-wrap">
+                        <p class="cap">Отделка</p>
+                        <p class="descr">Работы производятся <b>с учетом движения воздуха</b> в помещении и сохранения норм влаги и конденсата</p>
+                      </div>
+                    </div>
+                    <div class="bul-img">
+                      <img src="assets/img/bullet-1.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="bullet large-10 large-offset-4 column">
+                  <div class="wrap">
+                    <div class="bul-img">
+                      <img src="assets/img/bullet-2.png" alt="">
+                    </div>
+                    <div class="bul-text">
+                      <div class="text-wrap">
+                        <p class="cap">Каркас</p>
+                        <p class="descr">Материал каркаса подбирается относительно размера и <b>модели будущего дома</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bullet large-10 column">
+                  <div class="wrap">
+                    <div class="bul-text">
+                      <div class="text-wrap">
+                        <p class="cap">Фундамент</p>
+                        <p class="descr"><b>Подбираем технологию</b> установки фундамента в соответствии с почвой вашего участка</p>
+                      </div>
+                    </div>
+                    <div class="bul-img">
+                      <img src="assets/img/bullet-3.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="bullet large-10 large-offset-4 column">
+                  <div class="wrap">
+                    <div class="bul-img">
+                      <img src="assets/img/bullet-4.png" alt="">
+                    </div>
+                    <div class="bul-text">
+                      <div class="text-wrap">
+                        <p class="cap">Коммуникации</p>
+                        <p class="descr"><b>Индивидуальный расчет</b> с учетом вашего бюджета</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="services">
+          <div class="row">
+            <p class="header-text">Выберите одну из наших услуг <span class="subtitle">и получите комплексное решение</span></p>
+            <ul class="services-list small-up-1 medium-up-2 large-up-3">
+              <li class="item column">
+                <div class="wrap">
+                  <img src="assets/img/service-1.png" alt="">
+                  <p class="cap">Каркасные дома</p>
+                  <p class="descr">
+                    <b>скорость:</b> от 45 дней <br>
+                    <b>стоимость:</b> от 4 000р. за м<sup>2</sup></p>
+                  <div class="link">
+                    <a data-open="slider1-modal">Примеры работ</a>
+                  </div>
+                </div>
+              </li>
+              <li class="item column">
+                <div class="wrap">
+                  <img src="assets/img/service-2.png" alt="">
+                  <p class="cap">Дома из Сип-панелей</p>
+                  <p class="descr">
+                    <b>скорость:</b> от 50 дней <br>
+                    <b>стоимость:</b> от 6 000р. за м<sup>2</sup></p>
+                  <div class="link">
+                    <a data-open="slider2-modal">Примеры работ</a>
+                  </div>
+                </div>
+              </li>
+              <li class="item column">
+                <div class="wrap">
+                  <img src="assets/img/service-3.png" alt="">
+                  <p class="cap">Дома из бруса</p>
+                  <p class="descr">
+                    <b>скорость:</b> от 60 дней <br>
+                    <b>стоимость:</b> от 7 000р. за м<sup>2</sup></p>
+                  <div class="link">
+                    <a data-open="slider3-modal">Примеры работ</a>
+                  </div>
+                </div>
+              </li>
+              <li class="item column">
+                <div class="wrap">
+                  <img src="assets/img/service-4.png" alt="">
+                  <p class="cap">Купольные дома</p>
+                  <p class="descr">
+                    <b>скорость:</b> от 45 дней <br>
+                    <b>стоимость:</b> от 9 000р. за м<sup>2</sup></p>
+                  <div class="link">
+                    <a data-open="slider4-modal">Примеры работ</a>
+                  </div>
+                </div>
+              </li>
+              <li class="item column">
+                <div class="wrap">
+                  <img src="assets/img/service-5.png" alt="">
+                  <p class="cap">Дома из блоков</p>
+                  <p class="descr">
+                    <b>скорость:</b> от 60 дней <br>
+                    <b>стоимость:</b> от 6 000р. за м<sup>2</sup></p>
+                  <div class="link">
+                    <a data-open="slider5-modal">Примеры работ</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        
+        <section class="projects-slider">
+          <div class="row">
+            <p class="header-text">Несколько проектов <span class="subtitle">которые мы реализовали</span></p>
+            
+            <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+              <ul class="orbit-container">
+                <button class="orbit-previous"></button>
+                <button class="orbit-next"></button>
+                <li class="is-active orbit-slide">
+                  <img class="orbit-image" src="assets/img/projects/project-1.jpg" alt="Название проекта">
+                  <div class="orbit-caption">
+                    <p class="caption">Дом из бруса</p>
+                    <p class="period"><b>Срок изготовления:</b> 3 месяца</p>
+                    <p class="description"><b>Описание:</b> Одноэтажный коттедж, вытянутый горизонтально. В доме две соединенных друг с другом веранды, гостиная с эркером, окна которого выходят на веранду, кухня, две спальни и совмещенный санузел, компоновка которого позволяет разделить его.</p>
+                  </div>
+                </li>
+                <li class="orbit-slide">
+                  <img class="orbit-image" src="assets/img/projects/project-2.jpg" alt="Название проекта">
+                  <div class="orbit-caption">
+                    <p class="caption">Каркасный дом</p>
+                    <p class="period"><b>Срок изготовления:</b> 3 месяца</p>
+                    <p class="description"><b>Описание:</b> Аккуратный двухэтажный коттедж в английском стиле, отличающийся оригинальной планировкой. Небольшая площадь дома не помешала разместить внутри просторную гостиную, полноценную ванную комнату и две спальни площадью 15 кв.м.</p>
+                  </div>
+                </li>
+                <li class="orbit-slide">
+                  <img class="orbit-image" src="assets/img/projects/project-3.jpg" alt="Название проекта">
+                  <div class="orbit-caption">
+                    <p class="caption">Купольный дом</p>
+                    <p class="period"><b>Срок изготовления:</b> 3 месяца</p>
+                    <p class="description"><b>Описание:</b>Первый этаж. Заходим в маленький тамбур, а оттуда в большой холл. Рядом располагается санузел с переходом в небольшую котельную. Далее нас ждет шикарных размеров кухня и гостиная. Справа от кухни находится спальня и кабинет. В каждом из помещений предусмотрена своя небольшая гардеробная. Из холла поднимаемся по лестничному маршу на второй этаж. Второй этаж. Здесь архитектор расположил маленький холл с панорамным видом. Слева — санузел, справа — огромных размеров спальная комната с большой гардеробной и выходом на балкон</p>
+                  </div>
+                </li>
+                <li class="orbit-slide">
+                  <img class="orbit-image" src="assets/img/projects/project-4.jpg" alt="Название проекта">
+                  <div class="orbit-caption">
+                    <p class="caption">Каркасный дом</p>
+                    <p class="period"><b>Срок изготовления:</b> 3 месяца</p>
+                    <p class="description"><b>Описание:</b> Рассчитанный на проживание 6 человек коттедж в два этажа. Дом имеет два полноценных санузла на первом и втором этаже, 3 спальни наверху, гостиную, прихожую и кухню-столовую на первом этаже. Крыльцо защищает удлиненный скат крыши дома.</p>
+                  </div>
+                </li>
+                <li class="orbit-slide">
+                  <img class="orbit-image" src="assets/img/projects/project-5.jpg" alt="Название проекта">
+                  <div class="orbit-caption">
+                    <p class="caption">Дом из сип-панелей</p>
+                    <p class="period"><b>Срок изготовления:</b> 3 месяца</p>
+                    <p class="description"><b>Описание:</b> Проект двухэтажного дома в современном стиле предполагает чёткое зонирование внутреннего пространства: на первом этаже располагается единое помещение кухни-гостиной, использующее максимум доступной площади, а жилые комнаты находятся на втором этаже. Функциональное разделение помещений делает данный проект подходящим вариантом для дачного дома.</p>
+                  </div>
+                </li>
+                <li class="orbit-slide">
+                  <img class="orbit-image" src="assets/img/projects/project-6.jpg" alt="Название проекта">
+                  <div class="orbit-caption">
+                    <p class="caption">Каркасный дома</p>
+                    <p class="period"><b>Срок изготовления:</b> 3 месяца</p>
+                    <p class="description"><b>Описание:</b> Проект двухэтажного дома в классическом пригородном стиле отличается строгостью форм и в полной мере универсальным дизайном. Первый этаж дома отведен под кухню-гостиную, на втором располагаются две спальни и два небольших кабинета.</p>
+                  </div>
+                </li>
+                <li class="orbit-slide">
+                  <img class="orbit-image" src="assets/img/projects/project-7.jpg" alt="Название проекта">
+                  <div class="orbit-caption">
+                    <p class="caption">Каркасный дом</p>
+                    <p class="period"><b>Срок изготовления:</b> 3 месяца</p>
+                    <p class="description"><b>Описание:</b> Уютный дом с просторной крытой террасой в равной степени подойдет для загородного отдыха и для постоянного проживания. Три больших спальни, кухня-гостиная и полноценная ванная комната делают этот проект в полной мере универсальным.</p>
+                  </div>
+                </li>
+                <li class="orbit-slide">
+                  <img class="orbit-image" src="assets/img/projects/project-8.jpg" alt="Название проекта">
+                  <div class="orbit-caption">
+                    <p class="caption">Дом из бруса</p>
+                    <p class="period"><b>Срок изготовления:</b> 3 месяца</p>
+                    <p class="description"><b>Описание:</b> Двухэтажный дом с просторной верандой, имеющей выход из гостиной, и отдельным крыльцом. Кухня искусственно отделена от гостиной угловой перегородкой, на первом этаже предусмотрены санузел и душевая комната, жилые помещения располагаются на втором этаже. В доме предусмотрены две больших спальни и комната площадью 10 кв.м. Также на втором этаже есть ванная, совмещенная с санузлом.</p>
+                  </div>
+                </li>
+        
+        
+              </ul>
+              <nav class="orbit-bullets">
+                <button class="is-active" data-slide="0"></button>
+                <button data-slide="1"></button>
+                <button data-slide="2"></button>
+                <button data-slide="3"></button>
+                <button data-slide="4"></button>
+                <button data-slide="5"></button>
+                <button data-slide="6"></button>
+                <button data-slide="7"></button>
+              </nav>
+            </div>
+            
+          </div>
+        </section>
+        
+        <section class="second-bullets">
+          <div class="row">
+            <p class="header-text">Вы смело можете доверить строительство <span class="subtitle">вашего дома нам</span></p>
+            <ul class="bullets small-up-1 medium-up-2 large-up-3">
+              <li class="column">
+                <div class="wrap">
+                  <div class="frame">
+                    <img src="assets/img/icons/bullet-01.png" alt="">
+                  </div>
+                  <p class="descript"><b>Мы победили в номинации</b> «Новый продукт» на выставке «Красноярская ярмарка»</p>
+                </div>
+              </li>
+              <li class="column">
+                <div class="wrap">
+                  <div class="frame">
+                    <img src="assets/img/icons/bullet-02.png" alt="">
+                  </div>
+                  <p class="descript">У вас будет документально оформленная <b>гарантия 5 лет</b></p>
+                </div>
+              </li>
+              <li class="column">
+                <div class="wrap">
+                  <div class="frame">
+                    <img src="assets/img/icons/bullet-03.png" alt="">
+                  </div>
+                  <p class="descript">Наш опыт измеряется в 87 построенных домах <b>за 7 лет работы</b></p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        
+        <section class="reviews">
+          <div class="row">
+            <p class="header-text">Отзывы наших клиентов</p>
+            <div class="carousel">
+              <div class="buttn carousel-button-left"></div>
+              <div class="buttn carousel-button-right"></div>
+              <div class="carousel-wrapper">
+                <div class="carousel-items small-up-1 large-up-3">
+                  <div class="carousel-block column">
+                    <iframe width="370" height="208" src="https://www.youtube.com/embed/K7p3xtsDfsc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                    <p class="subtitle"><b>Найденова Марина</b>г. Иркутск</p>
+                  </div>
+                  <div class="carousel-block column">
+                    <iframe width="370" height="208" src="https://www.youtube.com/embed/VXQUVSCPtDw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                    <p class="subtitle"><b>Крамшин Петр</b>пос. Маркова Иркутской области</p>
+                  </div>
+                  <div class="carousel-block column">
+                    <iframe width="370" height="208" src="https://www.youtube.com/embed/zFlU_39FKyc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                    <p class="subtitle"><b>Торкашов Игорь</b>г. Тулун Иркутской области</p>
+                  </div>
+                  <div class="carousel-block column">
+                    <iframe width="370" height="208" src="https://www.youtube.com/embed/cUrxbxiEoWg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                    <p class="subtitle"><b>Еремеева Галина</b>г. Тайшет Иркутской области</p>
+                  </div>
+                  <div class="carousel-block column">
+                    <iframe width="370" height="208" src="https://www.youtube.com/embed/O7lyzLH5wnU?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                    <p class="subtitle"><b>Тюнина Ольга</b>г. Канск Красноярский край</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="calculate">
+          <div class="row">
+            <div class="frame small-24 large-12 column">
+              <div class="calc-wrapper">
+                <p class="header-text">Рассчитайте стоимость <span class="subtitle">своего будущего дома</span></p>
+                <div class="form row">
+                  <p class="block-name small-5 column">Материал:</p>
+                  <div class="input-block small-19 column">
+                    <label>
+                      <input class="radio" type="radio" name="material" checked value="Каркасный дом">
+                      <span class="radio-custom"></span>
+                      <span class="label">Каркасный дом</span>
+                    </label>
+                    <label>
+                      <input class="radio" type="radio" name="material" value="Сип-панели">
+                      <span class="radio-custom"></span>
+                      <span class="label">Сип-панели</span>
+                    </label>
+                    <label>
+                      <input class="radio" type="radio" name="material" value="Из бруса">
+                      <span class="radio-custom"></span>
+                      <span class="label">Из бруса</span>
+                    </label>
+                    <label>
+                      <input class="radio" type="radio" name="material" value="Из бетонных блоков">
+                      <span class="radio-custom"></span>
+                      <span class="label">Из бетонных блоков</span>
+                    </label>
+                    <label>
+                      <input class="radio" type="radio" name="material" value="Купольный дом">
+                      <span class="radio-custom"></span>
+                      <span class="label">Купольный дом</span>
+                    </label>
+                  </div>
+                  <p class="block-name small-5 column">Длина м<sup>2</sup>:</p>
+                  <div class="input-block small-6 column">
+                    <input type="number" class="not-empty" name="length">
+                  </div>
+                  <p class="block-name small-7 column">Кол-во этажей:</p>
+                  <div class="input-block small-6 column">
+        
+                    <select name="stages" class="not-empty">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+        
+                 
+                  </div>
+                  <p class="block-name small-5 column">Ширина м<sup>2</sup>:</p>
+                  <div class="input-block small-6 column">
+                    <input type="number" class="not-empty"  name="width">
+                  </div>
+                  <p class="block-name small-7 column">Высота потолков:</p>
+                  <div class="input-block small-6 column">
+                    <input type="number" class="not-empty"  name="height">
+                  </div>
+                  <button type="submit" class="button" >Рассчитать</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="map-block">
+          <div id="map"></div>
+        </section>
+        
+        <footer class="footer-nav">
+          <div class="row wrap align-middle">
+            <div class="logo small-24 large-6 column">
+              <a href=""><img src="assets/img/logo.png" alt="Жильё моё"></a>
+            </div>
+            <div class="descript small-24 large-4 column">
+              <p>Малоэтажное строительство<br> в Красноярске</p>
+            </div>
+            <div class="address small-24 large-7 column">
+              <p>ул. Северное шоссе, 17, 6 офис (4 этаж)</p>
+            </div>
+            <div class="wanna-credit small-24 large-3 column">
+              <div class="button" data-open="credit-modal">Хотите в кредит?</div>
+            </div>
+            <div class="phone column">
+              <a href="tel:88005500806">8-800-550-08-66</a>
+              <p data-open="consult-modal">Нужна консультация?</p>
+            </div>
+          </div>
+        </footer>
+        
+        
+        <div class="row reveal" id="credit-modal" data-reveal>
+          <button class="close-button" data-close aria-label="Закрыть окно" type="button">
+            <span>закрыть</span> <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="left small-12 column">
+            <p class="header-text">Выбери свой <span class="subtitle">вариант кредитования:</span></p>
+            <ul>
+              <p>Для всех домов</p>
+              <li>кредит с  первоначальным взносом от 30%, срок кредитования до 3 лет, принимаем материнский капитал <span class="small">(в счет частичной оплаты строительства дома, при этом первоначальный взнос материнским капиталом оплачен быть не может)</span></li>
+              <br>
+              <p>Для домов, строящихся в поселке Монамур:</p>
+              <li>льготная ипотека в АКБАРС БАНКЕ. <span class="small">Решение по ипотеке принимает банк после рассмотрения полного пакета документов запрошенного банком, на данное решение мы не влияем.</span></li>
+              <li>покупка земельного участка в рассрочку с первоначальным взносом 30% на срок до 12 месяцев</li>
+            </ul>
+          </div>
+          <div class="right small-12 column">
+            <p>Оставьте заявку и наш менеджер<br>свяжется с вами в ближайшее время</p>
+            <form action="" method="get" name="credit-form">
+              <label for="name">
+                Введите свое имя
+                <input type="text" name="name" placeholder="Например, Иван">
+              </label>
+              <label for="tell">
+                Введите номер телефона
+                <input type="tel" name="tell" placeholder="+7 (391) 287 05-06">
+              </label>
+              <input type="submit" name="send" class="feedback button" value="Рассчитать">
+            </form>
+          </div>
+        </div>
+        <div class="reveal default-modal" id="consult-modal" data-reveal>
+          <button class="close-button" data-close aria-label="Закрыть окно" type="button">
+            <span>закрыть</span> <span aria-hidden="true">&times;</span>
+          </button>
+          <p class="header-text">Бесплатная консультация</p>
+          <p class="subtext">Оставьте заявку и наш менеджер свяжется <br>с вами в ближайшее время</p>
+          <form action="" method="get" name="consult-form">
+            <label for="name">
+              Введите свое имя
+              <input type="text" name="name" placeholder="Например, Иван">
+            </label>
+            <label for="tell">
+              Введите номер телефона
+              <input type="tel" name="tell" placeholder="+7 (391) 287 05-06">
+            </label>
+            <input type="submit" name="send" class="feedback button" value="Отправить">
+          </form>
+        </div>
+        <div class="reveal default-modal" id="get3d-modal" data-reveal>
+          <button class="close-button" data-close aria-label="Закрыть окно" type="button">
+            <span>закрыть</span> <span aria-hidden="true">&times;</span>
+          </button>
+          <p class="header-text">Получить 3D-модель <span class="subtitle">своего будущего дома</span></p>
+          <p class="subtext">Оставьте заявку и наш менеджер свяжется <br>с вами в ближайшее время</p>
+          <form action="" method="get" name="get3d-form">
+            <label for="name">
+              Введите свое имя
+              <input type="text" name="name" placeholder="Например, Иван">
+            </label>
+            <label for="tell">
+              Введите номер телефона
+              <input type="tel" name="tell" placeholder="+7 (391) 287 05-06">
+            </label>
+            <input type="submit" name="send" class="feedback button" value="Отправить">
+          </form>
+        </div>
+        <div class="reveal default-modal" id="price-modal-1" data-reveal>
+          <button class="close-button" data-close aria-label="Закрыть окно" type="button">
+            <span>закрыть</span> <span aria-hidden="true">&times;</span>
+          </button>
+          <p class="header-text">Узнайте стоимость <span class="subtitle">базового дома<br>под Ваши размеры</span></p>
+          <p class="subtext">Оставьте заявку и наш менеджер свяжется <br>с вами в ближайшее время</p>
+          <form action="" method="get" name="price-form-1">
+            <label for="name">
+              Введите свое имя
+              <input type="text" name="name" placeholder="Например, Иван">
+            </label>
+            <label for="tell">
+              Введите номер телефона
+              <input type="tel" name="tell" placeholder="+7 (391) 287 05-06">
+            </label>
+            <input type="submit" name="send" class="feedback button" value="Отправить">
+          </form>
+        </div>
+        <div class="reveal default-modal" id="price-modal-2" data-reveal>
+          <button class="close-button" data-close aria-label="Закрыть окно" type="button">
+            <span>закрыть</span> <span aria-hidden="true">&times;</span>
+          </button>
+          <p class="header-text">Узнайте стоимость <span class="subtitle">дома под ключ<br>под Ваши размеры</span></p>
+          <p class="subtext">Оставьте заявку и наш менеджер свяжется <br>с вами в ближайшее время</p>
+          <form action="" method="get" name="price-form-2">
+            <label for="name">
+              Введите свое имя
+              <input type="text" name="name" placeholder="Например, Иван">
+            </label>
+            <label for="tell">
+              Введите номер телефона
+              <input type="tel" name="tell" placeholder="+7 (391) 287 05-06">
+            </label>
+            <input type="submit" name="send" class="feedback button" value="Отправить">
+          </form>
+        </div>
+        <div class="reveal default-modal" id="price-modal-3" data-reveal>
+          <button class="close-button" data-close aria-label="Закрыть окно" type="button">
+            <span>закрыть</span> <span aria-hidden="true">&times;</span>
+          </button>
+          <p class="header-text">Узнайте стоимость <span class="subtitle">готового дома с участком<br>под Ваши размеры</span></p>
+          <p class="subtext">Оставьте заявку и наш менеджер свяжется <br>с вами в ближайшее время</p>
+          <form action="" method="get" name="price-form-3">
+            <label for="name">
+              Введите свое имя
+              <input type="text" name="name" placeholder="Например, Иван">
+            </label>
+            <label for="tell">
+              Введите номер телефона
+              <input type="tel" name="tell" placeholder="+7 (391) 287 05-06">
+            </label>
+            <input type="submit" name="send" class="feedback button" value="Отправить">
+          </form>
+        </div>
+        
+        <div class="reveal slider-modal" id="slider1-modal" data-reveal>
+          <button class="close-button" data-close aria-label="Закрыть окно" type="button">
+            <span>закрыть</span> <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="orbit" role="region" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+            <ul class="orbit-container">
+              <button class="navi orbit-previous"></button>
+              <button class="navi orbit-next"></button>
+              <li class="is-active orbit-slide">
+                <img class="orbit-image" src="assets/img/bgs/slider/karkas-1.jpg">
+              </li>
+              <li class="orbit-slide">
+                <img class="orbit-image" src="assets/img/bgs/slider/karkas-2.jpg">
+              </li>
+              <li class="orbit-slide">
+                <img class="orbit-image" src="assets/img/bgs/slider/karkas-3.jpg">
+              </li>
+            </ul>
+          </div>
+          <form action="" method="get" name="karkas-form">
+            <p class="header-text">Хотите такой же?</p>
+            <p class="subtext">Оставьте заявку и наш менеджер свяжется <br>с вами в ближайшее время</p>
+            <div class="wrap">
+              <input type="text" name="name" placeholder="Введите своё имя">
+              <input type="tel" name="tell" placeholder="Введите номер телефона">
+              <input type="submit" name="send" class="feedback button" value="Рассчитать">
+            </div>
+          </form>
+        </div>
+        <div class="reveal slider-modal" id="slider2-modal" data-reveal>
+          <button class="close-button" data-close aria-label="Закрыть окно" type="button">
+            <span>закрыть</span> <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="orbit" role="region" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+            <ul class="orbit-container">
+              <button class="navi orbit-previous"></button>
+              <button class="navi orbit-next"></button>
+              <li class="is-active orbit-slide">
+                <img class="orbit-image" src="assets/img/bgs/slider/sip-1.jpg">
+              </li>
+              <li class="orbit-slide">
+                <img class="orbit-image" src="assets/img/bgs/slider/sip-2.jpg">
+              </li>
+              <li class="orbit-slide">
+                <img class="orbit-image" src="assets/img/bgs/slider/sip-3.jpg">
+              </li>
+            </ul>
+          </div>
+          <form action="" method="get" name="sip-form">
+            <p class="header-text">Хотите такой же?</p>
+            <p class="subtext">Оставьте заявку и наш менеджер свяжется <br>с вами в ближайшее время</p>
+            <div class="wrap">
+              <input type="text" name="name" placeholder="Введите своё имя">
+              <input type="tel" name="tell" placeholder="Введите номер телефона">
+              <input type="submit" name="send" class="feedback button" value="Рассчитать">
+            </div>
+          </form>
+        </div>
+        <div class="reveal slider-modal" id="slider3-modal" data-reveal>
+          <button class="close-button" data-close aria-label="Закрыть окно" type="button">
+            <span>закрыть</span> <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="orbit" role="region" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+            <ul class="orbit-container">
+              <button class="navi orbit-previous"></button>
+              <button class="navi orbit-next"></button>
+              <li class="is-active orbit-slide">
+                <img class="orbit-image" src="assets/img/bgs/slider/brus-1.jpg">
+              </li>
+              <li class="orbit-slide">
+                <img class="orbit-image" src="assets/img/bgs/slider/brus-2.jpg">
+              </li>
+              <li class="orbit-slide">
+                <img class="orbit-image" src="assets/img/bgs/slider/brus-3.jpg">
+              </li>
+            </ul>
+          </div>
+          <form action="" method="get" name="brus-form">
+            <p class="header-text">Хотите такой же?</p>
+            <p class="subtext">Оставьте заявку и наш менеджер свяжется <br>с вами в ближайшее время</p>
+            <div class="wrap">
+              <input type="text" name="name" placeholder="Введите своё имя">
+              <input type="tel" name="tell" placeholder="Введите номер телефона">
+              <input type="submit" name="send" class="feedback button" value="Рассчитать">
+            </div>
+          </form>
+        </div>
+        <div class="reveal slider-modal" id="slider4-modal" data-reveal>
+          <button class="close-button" data-close aria-label="Закрыть окно" type="button">
+            <span>закрыть</span> <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="orbit" role="region" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+            <ul class="orbit-container">
+              <button class="navi orbit-previous"></button>
+              <button class="navi orbit-next"></button>
+              <li class="is-active orbit-slide">
+                <img class="orbit-image" src="assets/img/bgs/slider/kupol-1.jpg">
+              </li>
+              <li class="orbit-slide">
+                <img class="orbit-image" src="assets/img/bgs/slider/kupol-2.jpg">
+              </li>
+            </ul>
+          </div>
+          <form action="" method="get" name="kupol-form">
+            <p class="header-text">Хотите такой же?</p>
+            <p class="subtext">Оставьте заявку и наш менеджер свяжется <br>с вами в ближайшее время</p>
+            <div class="wrap">
+              <input type="text" name="name" placeholder="Введите своё имя">
+              <input type="tel" name="tell" placeholder="Введите номер телефона">
+              <input type="submit" name="send" class="feedback button" value="Рассчитать">
+            </div>
+          </form>
+        </div>
+        <div class="reveal slider-modal" id="slider5-modal" data-reveal>
+          <button class="close-button" data-close aria-label="Закрыть окно" type="button">
+            <span>закрыть</span> <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="orbit" role="region" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+            <ul class="orbit-container">
+              <button class="navi orbit-previous"></button>
+              <button class="navi orbit-next"></button>
+              <li class="is-active orbit-slide">
+                <img class="orbit-image" src="assets/img/bgs/slider/blok-1.jpg">
+              </li>
+              <li class="orbit-slide">
+                <img class="orbit-image" src="assets/img/bgs/slider/blok-2.jpg">
+              </li>
+              <li class="orbit-slide">
+                <img class="orbit-image" src="assets/img/bgs/slider/blok-3.jpg">
+              </li>
+            </ul>
+          </div>
+          <form action="" method="get" name="block-form">
+            <p class="header-text">Хотите такой же?</p>
+            <p class="subtext">Оставьте заявку и наш менеджер свяжется <br>с вами в ближайшее время</p>
+            <div class="wrap">
+              <input type="text" name="name" placeholder="Введите своё имя">
+              <input type="tel" name="tell" placeholder="Введите номер телефона">
+              <input type="submit" name="send" class="feedback button" value="Рассчитать">
+            </div>
+          </form>
+        </div>
+        
+        <div class="reveal" id="calc-modal" data-reveal>
+          <button class="close-button" data-close aria-label="Закрыть окно" type="button">
+            <span>закрыть</span> <span aria-hidden="true">&times;</span>
+          </button>
+          <p class="header-text">Мы получили данные <span class="subtitle">и уже производим расчеты вашего будущего дома</span></p>
+          <p class="subtext">Оставьте свои контактные данные, <br>чтобы мы могли связаться с вами</p>
+          <form action="" method="get" name="calc-form">
+            <input type="hidden" name="material" value="">
+            <input type="hidden" name="length" value="">
+            <input type="hidden" name="stages" value="">
+            <input type="hidden" name="width" value="">
+            <input type="hidden" name="height" value="">
+            <label for="name">
+              Введите свое имя
+              <input type="text" name="name" placeholder="Например, Иван">
+            </label>
+            <label for="tell">
+              Введите номер телефона
+              <input type="tel" name="tell" placeholder="+7 (391) 287 05-06">
+            </label>
+            <input type="submit" name="send" class="feedback button" value="Отправить">
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="assets/user/browser_version.js"></script>
+    <script src="assets/js/app.js"></script>
+    <link href="feedback/css/jquery.jgrowl.css" rel="stylesheet">
+    <script src="feedback/js/jquery.jgrowl.js"></script>
+    <script src="feedback/js/feedback.js"></script>
+    
+    <!-- BEGIN JIVOSITE CODE {literal} -->
+    <script type='text/javascript'>
+    (function(){ var widget_id = 'wzBFlRLIn2';var d=document;var
+    w=window;function l(){
+    var s = document.createElement('script'); s.type = 'text/javascript';
+    s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id;
+    var ss = document.getElementsByTagName('script')[0];
+    ss.parentNode.insertBefore(s,
+    ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+    <!-- {/literal} END JIVOSITE CODE -->    
+    
+  </body>
+</html>
